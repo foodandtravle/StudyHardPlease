@@ -10,6 +10,7 @@
 		A715A7651C5AEBD2000822F4 /* funny.m in Sources */ = {isa = PBXBuildFile; fileRef = A715A7641C5AEBD2000822F4 /* funny.m */; };
 		A715A76B1C5AF4EA000822F4 /* RequestTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A715A76A1C5AF4EA000822F4 /* RequestTestTableViewController.m */; };
 		A717858B1C5EEE7500251613 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A717858A1C5EEE7500251613 /* Cell.m */; };
+		A71786551C5FAA6E00251613 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = A71786541C5FAA6E00251613 /* Cache.m */; };
 		A7B8DF511C5A543100AD9EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF501C5A543100AD9EC7 /* main.m */; };
 		A7B8DF541C5A543100AD9EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF531C5A543100AD9EC7 /* AppDelegate.m */; };
 		A7B8DF571C5A543100AD9EC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF561C5A543100AD9EC7 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 		A715A76A1C5AF4EA000822F4 /* RequestTestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTestTableViewController.m; sourceTree = "<group>"; };
 		A71785891C5EEE7500251613 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		A717858A1C5EEE7500251613 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		A71786531C5FAA6E00251613 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		A71786541C5FAA6E00251613 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
 		A7B8DF4C1C5A543100AD9EC7 /* StudyHardPlease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyHardPlease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B8DF501C5A543100AD9EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7B8DF521C5A543100AD9EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,15 @@
 			);
 			name = FunnyModle;
 			path = Modle;
+			sourceTree = "<group>";
+		};
+		A71786521C5FAA3100251613 /* CacheDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A71786531C5FAA6E00251613 /* Cache.h */,
+				A71786541C5FAA6E00251613 /* Cache.m */,
+			);
+			path = CacheDemo;
 			sourceTree = "<group>";
 		};
 		A7B8DF431C5A543100AD9EC7 = {
@@ -196,6 +208,7 @@
 		A7B8DF8B1C5A664A00AD9EC7 /* FirstPage */ = {
 			isa = PBXGroup;
 			children = (
+				A71786521C5FAA3100251613 /* CacheDemo */,
 				A7B8DF8C1C5A664A00AD9EC7 /* RequestTestDemo */,
 			);
 			path = FirstPage;
@@ -407,6 +420,7 @@
 				A717858B1C5EEE7500251613 /* Cell.m in Sources */,
 				A7B8DF871C5A5D4D00AD9EC7 /* DemoTableViewController.m in Sources */,
 				A7B8DF5D1C5A543100AD9EC7 /* StudyHardPlease.xcdatamodeld in Sources */,
+				A71786551C5FAA6E00251613 /* Cache.m in Sources */,
 				A7B8DF931C5A671000AD9EC7 /* MineJN.m in Sources */,
 				A7B8DF511C5A543100AD9EC7 /* main.m in Sources */,
 			);
