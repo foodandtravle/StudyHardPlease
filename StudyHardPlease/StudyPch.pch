@@ -1,0 +1,18 @@
+//
+//  StudyPch.pch
+//  StudyHardPlease
+//
+//  Created by 张德强 on 16/1/28.
+//  Copyright © 2016年 张德强. All rights reserved.
+//
+
+#ifndef StudyPch_pch
+#define StudyPch_pch
+
+/*定义尺寸*/
+#define maiSrc [UIScreen mainScreen].bounds.size
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* StudyPch_pch */
