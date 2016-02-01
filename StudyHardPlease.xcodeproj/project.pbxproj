@@ -208,6 +208,10 @@
 		A7B8DF8B1C5A664A00AD9EC7 /* FirstPage */ = {
 			isa = PBXGroup;
 			children = (
+				A7CB56921C5FB12C00AE9BB1 /* Massonry */,
+				A7CB56931C5FB12C00AE9BB1 /* SD_AutoLayout */,
+				A7CB56941C5FB12C00AE9BB1 /* StoryBoard */,
+				A7CB56951C5FB12C00AE9BB1 /* VisualFormatLanguage */,
 				A71786521C5FAA3100251613 /* CacheDemo */,
 				A7B8DF8C1C5A664A00AD9EC7 /* RequestTestDemo */,
 			);
@@ -236,6 +240,34 @@
 				A7B8DF921C5A671000AD9EC7 /* MineJN.m */,
 			);
 			path = MineJN;
+			sourceTree = "<group>";
+		};
+		A7CB56921C5FB12C00AE9BB1 /* Massonry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Massonry;
+			sourceTree = "<group>";
+		};
+		A7CB56931C5FB12C00AE9BB1 /* SD_AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SD_AutoLayout;
+			sourceTree = "<group>";
+		};
+		A7CB56941C5FB12C00AE9BB1 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A7CB56951C5FB12C00AE9BB1 /* VisualFormatLanguage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VisualFormatLanguage;
 			sourceTree = "<group>";
 		};
 		D6C53B4E7DDC2B2338375CF2 /* Pods */ = {
