@@ -41,7 +41,7 @@
                     @"test10", nil];
     }
     
-    [self.navigationController pushViewController:[NSClassFromString(_dataArr[0]) new] animated:YES];
+//    [self.navigationController pushViewController:[NSClassFromString(_dataArr[0]) new] animated:YES];
     
 }
 

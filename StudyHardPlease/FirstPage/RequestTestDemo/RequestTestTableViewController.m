@@ -41,6 +41,7 @@ static NSString *str = @"identifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//这两个判断语句和下边的tableViewDelegate代理函数都是为了去掉cell分割线左边那15像素
     if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
         
         [self.tableView setSeparatorInset:UIEdgeInsetsZero];
