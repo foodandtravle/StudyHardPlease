@@ -36,6 +36,35 @@ static NSString *str = @"identifier";
         NSLog(@"failure === %@",errorMessage);
         
     } parameters:dic];
+    
+    
+//    self.navigationItem.hidesBackButton = YES ;
+    
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    btn.frame = CGRectMake(0, 0, 55, 25);
+    
+    [btn setTitle:@"back" forState:UIControlStateNormal];
+    
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    
+    [btn setBackgroundImage:[[UIImage imageNamed:@"icon_fh"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
+    
+    
+    UIBarButtonItem * item2 = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(back)];
+    
+    self.navigationItem.leftBarButtonItem = item2 ;
+    
+    
+}
+
+-(void)back{
+    
+    NSLog(@"asd");
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
@@ -114,9 +143,6 @@ static NSString *str = @"identifier";
         
         //给自定义的imageView设置image
         [cell setframeForImageView:[UIImage imageWithData:data]];
-        
-        NSLog(@"asdasd");
-
     }
     
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:io.pic]];

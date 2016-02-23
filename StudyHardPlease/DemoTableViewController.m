@@ -31,7 +31,7 @@
         _dataArr = [[NSMutableArray alloc]initWithObjects:
                     @"RequestTestTableViewController",//网络请求测试Demo
                     @"PlistDemo",
-                    @"test3",
+                    @"dispath_asyncDemo",
                     @"test4",
                     @"test5",
                     @"test6",
@@ -75,10 +75,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIViewController *vc = [NSClassFromString(_dataArr[indexPath.row]) new];
-    
-    [self.navigationController pushViewController:vc animated:YES];
-    
+    if (indexPath.row < 3) {
+        
+        UIViewController *vc = [NSClassFromString(_dataArr[indexPath.row]) new];
+        
+        vc.navigationItem.title = _dataArr[indexPath.row];
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

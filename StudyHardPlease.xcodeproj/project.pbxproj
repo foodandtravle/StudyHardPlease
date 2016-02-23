@@ -11,6 +11,7 @@
 		A715A76B1C5AF4EA000822F4 /* RequestTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A715A76A1C5AF4EA000822F4 /* RequestTestTableViewController.m */; };
 		A717858B1C5EEE7500251613 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A717858A1C5EEE7500251613 /* Cell.m */; };
 		A71786551C5FAA6E00251613 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = A71786541C5FAA6E00251613 /* Cache.m */; };
+		A75006191C7C929300C9DD2F /* dispath_asyncDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A75006181C7C929300C9DD2F /* dispath_asyncDemo.m */; };
 		A7B7A1CB1C7C6E0200DEAE5F /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7B7A1CA1C7C6E0200DEAE5F /* test.plist */; };
 		A7B7A1CF1C7C6E6500DEAE5F /* PlistDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B7A1CE1C7C6E6500DEAE5F /* PlistDemo.m */; };
 		A7B8DF511C5A543100AD9EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF501C5A543100AD9EC7 /* main.m */; };
@@ -57,6 +58,8 @@
 		A717858A1C5EEE7500251613 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		A71786531C5FAA6E00251613 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
 		A71786541C5FAA6E00251613 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
+		A75006171C7C929300C9DD2F /* dispath_asyncDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispath_asyncDemo.h; sourceTree = "<group>"; };
+		A75006181C7C929300C9DD2F /* dispath_asyncDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispath_asyncDemo.m; sourceTree = "<group>"; };
 		A7B7A1CA1C7C6E0200DEAE5F /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
 		A7B7A1CD1C7C6E6500DEAE5F /* PlistDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistDemo.h; sourceTree = "<group>"; };
 		A7B7A1CE1C7C6E6500DEAE5F /* PlistDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistDemo.m; sourceTree = "<group>"; };
@@ -138,6 +141,15 @@
 				A71786541C5FAA6E00251613 /* Cache.m */,
 			);
 			path = CacheDemo;
+			sourceTree = "<group>";
+		};
+		A75006161C7C926700C9DD2F /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				A75006171C7C929300C9DD2F /* dispath_asyncDemo.h */,
+				A75006181C7C929300C9DD2F /* dispath_asyncDemo.m */,
+			);
+			path = "多线程";
 			sourceTree = "<group>";
 		};
 		A7B7A1CC1C7C6E4700DEAE5F /* PlistDemo */ = {
@@ -223,6 +235,7 @@
 		A7B8DF8B1C5A664A00AD9EC7 /* FirstPage */ = {
 			isa = PBXGroup;
 			children = (
+				A75006161C7C926700C9DD2F /* 多线程 */,
 				A7B7A1CC1C7C6E4700DEAE5F /* PlistDemo */,
 				A7CB56921C5FB12C00AE9BB1 /* Massonry */,
 				A7CB56931C5FB12C00AE9BB1 /* SD_AutoLayout */,
@@ -466,6 +479,7 @@
 				A715A7651C5AEBD2000822F4 /* funny.m in Sources */,
 				A7B7A1CF1C7C6E6500DEAE5F /* PlistDemo.m in Sources */,
 				A715A76B1C5AF4EA000822F4 /* RequestTestTableViewController.m in Sources */,
+				A75006191C7C929300C9DD2F /* dispath_asyncDemo.m in Sources */,
 				A7B8DF541C5A543100AD9EC7 /* AppDelegate.m in Sources */,
 				A717858B1C5EEE7500251613 /* Cell.m in Sources */,
 				A7B8DF871C5A5D4D00AD9EC7 /* DemoTableViewController.m in Sources */,

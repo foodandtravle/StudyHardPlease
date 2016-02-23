@@ -39,10 +39,12 @@
     
     NSFileManager * manager = [NSFileManager defaultManager];
     
+    //如果路径存在
     if ([manager fileExistsAtPath:filePath]) {
         
         NSError * error = nil ;
         
+        //删除这个文件
         [manager removeItemAtPath:filePath error:&error];
     }
     
