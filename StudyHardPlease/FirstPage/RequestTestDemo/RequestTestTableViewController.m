@@ -107,8 +107,25 @@ static NSString *str = @"identifier";
 
     }
     
-    UIImage *img = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:io.pic]]];
+    //图片本地化   缓存
+    if ([[NSUserDefaults standardUserDefaults] valueForKey:io.pic]) {
+        
+        NSData *data = [[NSUserDefaults  standardUserDefaults] valueForKey:io.pic];
+        
+        //给自定义的imageView设置image
+        [cell setframeForImageView:[UIImage imageWithData:data]];
+        
+        NSLog(@"asdasd");
+
+    }
     
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:io.pic]];
+    
+    UIImage *img = [UIImage imageWithData:data];
+    
+    [[NSUserDefaults standardUserDefaults] setValue: data forKey:io.pic];
+    
+    //给自定义的imageView设置image
     [cell setframeForImageView:img];
     
     [cell setHeightForLable:io.intro fontForLable:18 CGSize:CGSizeMake(maiSrc.width, CGFLOAT_MAX)];

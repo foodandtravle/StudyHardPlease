@@ -11,6 +11,8 @@
 		A715A76B1C5AF4EA000822F4 /* RequestTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A715A76A1C5AF4EA000822F4 /* RequestTestTableViewController.m */; };
 		A717858B1C5EEE7500251613 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A717858A1C5EEE7500251613 /* Cell.m */; };
 		A71786551C5FAA6E00251613 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = A71786541C5FAA6E00251613 /* Cache.m */; };
+		A7B7A1CB1C7C6E0200DEAE5F /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7B7A1CA1C7C6E0200DEAE5F /* test.plist */; };
+		A7B7A1CF1C7C6E6500DEAE5F /* PlistDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B7A1CE1C7C6E6500DEAE5F /* PlistDemo.m */; };
 		A7B8DF511C5A543100AD9EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF501C5A543100AD9EC7 /* main.m */; };
 		A7B8DF541C5A543100AD9EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF531C5A543100AD9EC7 /* AppDelegate.m */; };
 		A7B8DF571C5A543100AD9EC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B8DF561C5A543100AD9EC7 /* ViewController.m */; };
@@ -55,6 +57,9 @@
 		A717858A1C5EEE7500251613 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		A71786531C5FAA6E00251613 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
 		A71786541C5FAA6E00251613 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
+		A7B7A1CA1C7C6E0200DEAE5F /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		A7B7A1CD1C7C6E6500DEAE5F /* PlistDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistDemo.h; sourceTree = "<group>"; };
+		A7B7A1CE1C7C6E6500DEAE5F /* PlistDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistDemo.m; sourceTree = "<group>"; };
 		A7B8DF4C1C5A543100AD9EC7 /* StudyHardPlease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyHardPlease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B8DF501C5A543100AD9EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A7B8DF521C5A543100AD9EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +140,15 @@
 			path = CacheDemo;
 			sourceTree = "<group>";
 		};
+		A7B7A1CC1C7C6E4700DEAE5F /* PlistDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7A1CD1C7C6E6500DEAE5F /* PlistDemo.h */,
+				A7B7A1CE1C7C6E6500DEAE5F /* PlistDemo.m */,
+			);
+			path = PlistDemo;
+			sourceTree = "<group>";
+		};
 		A7B8DF431C5A543100AD9EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +197,7 @@
 			children = (
 				A7B8DF501C5A543100AD9EC7 /* main.m */,
 				A7B8DF881C5A608700AD9EC7 /* StudyPch.pch */,
+				A7B7A1CA1C7C6E0200DEAE5F /* test.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +223,7 @@
 		A7B8DF8B1C5A664A00AD9EC7 /* FirstPage */ = {
 			isa = PBXGroup;
 			children = (
+				A7B7A1CC1C7C6E4700DEAE5F /* PlistDemo */,
 				A7CB56921C5FB12C00AE9BB1 /* Massonry */,
 				A7CB56931C5FB12C00AE9BB1 /* SD_AutoLayout */,
 				A7CB56941C5FB12C00AE9BB1 /* StoryBoard */,
@@ -384,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B7A1CB1C7C6E0200DEAE5F /* test.plist in Resources */,
 				A7B8DF8A1C5A636500AD9EC7 /* LaunchScreen.xib in Resources */,
 				A7B8DF5F1C5A543100AD9EC7 /* Assets.xcassets in Resources */,
 				A7B8DF5A1C5A543100AD9EC7 /* Main.storyboard in Resources */,
@@ -447,6 +464,7 @@
 				A7B8DF8F1C5A666600AD9EC7 /* RequestTestDemo.m in Sources */,
 				A7B8DF571C5A543100AD9EC7 /* ViewController.m in Sources */,
 				A715A7651C5AEBD2000822F4 /* funny.m in Sources */,
+				A7B7A1CF1C7C6E6500DEAE5F /* PlistDemo.m in Sources */,
 				A715A76B1C5AF4EA000822F4 /* RequestTestTableViewController.m in Sources */,
 				A7B8DF541C5A543100AD9EC7 /* AppDelegate.m in Sources */,
 				A717858B1C5EEE7500251613 /* Cell.m in Sources */,
