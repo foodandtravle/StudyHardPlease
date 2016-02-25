@@ -44,7 +44,19 @@
         //do something
     });
     
-   
+    
+    //队列组
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //第一个耗时的异步操作
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       //第二个耗时的异步操作
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+       //两个都执行完了  回到主线程
+    });
+    
     
   
     
@@ -57,6 +69,9 @@
     
     
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
